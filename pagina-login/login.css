@@ -1,5 +1,4 @@
 #main-login {
-
   background-image: url("../img/bg-main-login.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,14 +29,57 @@
 }
 
 #form-login {
-  height: 342px;
+  position: relative;
+  top: -60px;
+  max-width: 720px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 26px auto 0 auto;
 }
 
+#form-login label {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+
+
+  margin-bottom: 10px;
+}
+
+#form-login input {
+  height: 54px;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#form-login a {
+  text-decoration: underline;
+  color: black;
+  align-self: center;
+  margin-top: -10px;
+}
+
+#form-login button {
+  font-weight: 500;
+  font-size: 18px;
+  width: 350px;
+  height: 54px;
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+
+
 @media screen and (max-width: 750px) {
-  #main-login {  
+  #main-login {
     padding-top: 33px;
   }
-  
+
   #main-login h1 {
     font-size: 42px;
   }
