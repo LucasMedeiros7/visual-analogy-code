@@ -1,0 +1,19 @@
+.main-login {
+  height: 600px;
+  background-image:url(../img/bg-main-login.svg);
+  background-size: cover;
+  background-position: top -500px;
+  background-repeat: no-repeat;
+  padding-top: 61px;
+}
+
+.main-login div {
+  text-align: center;
+  width: 793px;
+  margin: 0 auto;
+}
+
+.main-login div p {
+  display: inline-block;
+  margin-right: 5px;
+}
