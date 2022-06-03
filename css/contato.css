@@ -85,8 +85,32 @@ main .container-logo {
   margin-bottom: 1.6rem;
   color: rgb(0, 0, 0, 0.6);
 }
+
 .contato svg {
   margin-left: 1.6rem;
 }
 
+@media screen and (max-width: 920px) {
 
+  main p b {
+    font-size: 3rem;
+  }
+
+  main p {
+    font-size: 2.6rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  main .container-logo {
+    flex-direction: column;
+    width: 50%;
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 500px) {
+  main .container-logo {
+   display: none;
+  }
+}
