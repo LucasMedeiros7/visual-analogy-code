@@ -40,17 +40,15 @@
 
 #form-login label {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 34px;
-
-
   margin-bottom: 10px;
 }
 
 #form-login input {
   height: 54px;
   background-color: #f7f7f7;
-  border: 1px solid black;
+  border: 1px solid #ddd;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -65,14 +63,13 @@
 #form-login button {
   font-weight: 500;
   font-size: 18px;
-  width: 350px;
+  max-width: 350px;
+  width: 90%;
   height: 54px;
   margin: 20px auto;
-  border: 1px solid black;
+  border: 1px solid #ddd;
   border-radius: 10px;
 }
-
-
 
 
 @media screen and (max-width: 750px) {
