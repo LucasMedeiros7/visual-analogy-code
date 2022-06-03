@@ -1,6 +1,4 @@
 
-
-
 h1,
 p,
 li,
@@ -59,16 +57,44 @@ img {
 
 /*  -------------SECTIONS------------- */
 
-.card-body{
-    background-color: #cccccc ;
+.card{
+    
+    border: none;
 }
 
+.card-body{
+    background-color: #cccccc ;
+    margin: 20px 0px 20px 0px;
+    
+    
+}
+
+.caixa-gif {
+    width: 50vw;
+    display: flex;
+    padding: 50px 0px 50px 50px; 
+} 
+
+h1{
+    font-size: 30px;
+}
+
+.caixa-texto{
+    font-size: 17px;
+    margin-right: 10%;
+    
+}
+
+.caixa-texto .texto{
+    width: 40vw;
+}
 
 /*  -------------BOTÕES------------- */
 section .card .card-body .btn btn-primary{
     background-color: #006666;
   border-radius: 5px;
 }
+
 
 /*  -------------FOOTER------------- */
 
