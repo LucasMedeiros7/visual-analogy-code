@@ -1,0 +1,185 @@
+
+
+
+h1,
+p,
+li,
+ul,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*  -------------HEADER------------- */
+
+
+.bg-cor2 {
+  background-color: #004242;
+}
+
+.bg-cor3 {
+  background: #006666;
+}
+
+#navcadastro {
+  background: #f5f5f5;
+  color: #3c3c3c;
+  padding: 4px 10px;
+  border-radius: 50px;
+  width: max-content;
+  font-weight: 600;
+}
+
+#navlogin {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 50px;
+  padding: 4px 16px;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+#navcadastro:hover {
+  background: #bce1ab;
+}
+#navlogin:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*  -------------SECTIONS------------- */
+
+.card-body{
+    background-color: #cccccc ;
+}
+
+
+/*  -------------BOTÕES------------- */
+section .card .card-body .btn btn-primary{
+    background-color: #006666;
+  border-radius: 5px;
+}
+
+/*  -------------FOOTER------------- */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logorede {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 16px;
+  place-self: start;
+}
+
+.redesocial {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+}
+
+.redesocial i {
+  cursor: pointer;
+}
+.redesocial i:hover {
+  color: #bce1ab;
+}
+
+.footer-links {
+  place-self: end;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer li a {
+  color: #fff;
+}
+
+.footer li a:hover {
+  color: #bce1ab;
+}
+
+.footer-contato {
+  place-self: center;
+  padding: 0px 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-contato li:first-child {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 0px;
+}
+
+
+/*  -------------MEDIA QUERIES------------- */
+
+@media (max-width: 768px) {
+  #navlogin {
+    margin: 10px 0px 16px 0px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .logorede,
+  .footer-links,
+  .footer-contato {
+    place-self: center;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 4px 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+@media (max-width: 400px) {
+  .logo {
+    max-width: 90%;
+    margin-bottom: 2px;
+    margin: 0 auto;
+  }
+}
