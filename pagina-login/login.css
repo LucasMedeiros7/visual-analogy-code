@@ -85,6 +85,10 @@
   background-color: #a3c594d7;
 }
 
+/* MODAL */
+.modal-body p {
+  color: #004242;
+}
 
 @media screen and (max-width: 750px) {
   #main-login {

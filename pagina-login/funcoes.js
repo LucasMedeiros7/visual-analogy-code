@@ -1,23 +1,28 @@
 function mostraErro() {
   let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-  if (email.value == '' || regex.test(email.value) == false)
-    email.style.border = '1px solid red'
-    email.classList.add('is-invalid')
-    erroEmail.style.visibility = 'visible'
-  if (senha.value == '' || senha.value.length < 6)
+  if (senha.value == '' || senha.value.length < 6) {
     senha.style.border = '1px solid red'
     senha.classList.add('is-invalid')
     erroSenha.style.visibility = 'visible'
+  }
+
+  if (email.value == '' || regex.test(email.value) == false) {
+    email.style.border = '1px solid red'
+    email.classList.add('is-invalid')
+    erroEmail.style.visibility = 'visible'
+  }
+
 }
 
 function limpaEstilos() {
-  email.style.border = 'initial'
-  senha.style.border = 'initial'
+  email.style.border = '1px solid #28A745'
+  senha.style.border = '1px solid #28A745'
   erroEmail.style.visibility = 'hidden'
   erroSenha.style.visibility = 'hidden'
   email.classList.remove('is-invalid')
   senha.classList.remove('is-invalid')
+  senha.classList.add('is-valid')
 }
 
 function validaInput() {
@@ -33,7 +38,7 @@ function validaInput() {
       mostraErro()
     else if (senhaValor.length >= 6) {
       limpaEstilos()
-      alert('login com sucesso')
+      modal.style.display = 'block'
     } else mostraErro()
   }
 
