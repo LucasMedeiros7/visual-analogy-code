@@ -11,9 +11,12 @@
 
 #main-contato p strong {
   font-size: 30px;
+  font-weight: bold;
 }
 
 #main-contato p {
+  font-weight: 300;
+  color: white;
   width: 60%;
   margin: 0 auto 40px auto;
   font-size: 28px;

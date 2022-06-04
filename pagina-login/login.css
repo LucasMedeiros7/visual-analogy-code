@@ -61,14 +61,20 @@
 }
 
 #form-login button {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   max-width: 350px;
   width: 90%;
   height: 54px;
   margin: 20px auto;
-  border: 1px solid #ddd;
+  background-color: #bce1ab;
+  color: #004242;
+  border: 1px solid #0066668e;
   border-radius: 10px;
+}
+
+#form-login button:hover {
+  background-color: #a3c594d7;
 }
 
 
