@@ -1,5 +1,5 @@
 #main-contato {
-  background-image: url("../img/bg-main-login.svg");
+  background-image: url("../assets-login-contato/img/bg-main-login.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -18,7 +18,7 @@
   font-weight: 300;
   color: white;
   width: 50%;
-  margin: 0 auto 80px auto; 
+  margin: 0 auto 80px auto;
   font-size: 28px;
 }
 
@@ -75,15 +75,17 @@
 }
 
 @media (max-width: 1400px) {
+
   #main-contato p {
     width: 60%;
     margin-bottom: 40px;
   }
+
   #nossa-equipe img {
     width: 240px;
     height: 240px;
   }
-  
+
   .contato-devs {
     padding: 0 20px;
   }
