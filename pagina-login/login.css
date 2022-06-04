@@ -45,11 +45,19 @@
   margin-bottom: 10px;
 }
 
-#form-login input {
+#form-login .input-login {
   height: 54px;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 10px;
+}
+
+
+/* |||||||| MENSAGEM DE ERRO ||||||||| */
+#form-login span {
+  visibility: hidden;
+  color: red;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 

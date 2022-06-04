@@ -24,6 +24,7 @@
 
     <title>Visual Analogy Code</title>
     <link rel="shortcut icon" href="../img/favicon-login.svg" type="image/x-icon">
+    <script src="funcoes.js"></script>
     <script src="login.js" defer></script>
 </head>
 
@@ -72,9 +73,12 @@
     </main>
     <form id="form-login">
         <label for="email">E-mail</label>
-        <input type="email" name="" id="email" required>
+        <input class="input-login form-control"
+        type="email" name="" id="email" required>
+        <span id="erro-email">Insira um e-mail válido.</span>
         <label for="senha">Senha</label>
-        <input type="password" name="" id="senha" required>
+        <input class="input-login form-control" type="password" name="" id="senha" required>
+        <span id="erro-senha">Sua senha deve ter no mínimo 6 dígitos.</span>
         <a href="#">Esqueci a minha senha</a>
         <button id="btn-login" type="submit">Login</button>
     </form>
