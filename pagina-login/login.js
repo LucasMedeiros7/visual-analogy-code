@@ -5,9 +5,13 @@ const erroSenha = document.getElementById('erro-senha')
 const modal = document.querySelector('#modal')
 const btnHome = document.getElementById('btn-home')
 
+
 document.getElementById('btn-login').addEventListener('click', (e) => {
   e.preventDefault()
-  validaInput()
+  if(senha != null)
+    validaInput()
+  else 
+    recuperarSenha()
 })
 
 modal.onclick = () => modal.style.display = 'none'

@@ -1,4 +1,4 @@
-#main-login {
+.main-login {
   background-image: url("../assets-login-contato/img/bg-main-login.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,20 +9,20 @@
   padding-top: 61px;
 }
 
-#main-login h1 {
+.main-login h1 {
   font-size: 46px;
   margin-bottom: 20px;
   color: white;
   font-weight: 500;
 }
 
-#main-login a {
+.main-login a {
   font-size: 20px;
   text-decoration: none;
   color: #BCE1AB;
 }
 
-#main-login p {
+.main-login p {
   color: white;
   font-size: 20px;
   display: inline-block;
@@ -81,8 +81,16 @@
   border-radius: 10px;
 }
 
+#form-login .btn-recuperar {
+  margin-top: -20px;
+}
+
 #form-login button:hover {
   background-color: #a3c594d7;
+}
+
+#recuperar-senha {
+  margin-bottom: 120px;
 }
 
 /* MODAL */
@@ -91,15 +99,15 @@
 }
 
 @media screen and (max-width: 750px) {
-  #main-login {
+  .main-login {
     padding-top: 33px;
   }
 
-  #main-login h1 {
+  .main-login h1 {
     font-size: 42px;
   }
 
-  #main-login p {
+  .main-login p {
     display: block;
   }
 }

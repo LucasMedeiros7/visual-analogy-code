@@ -45,3 +45,19 @@ function validaInput() {
   else
     mostraErro()
 }
+
+
+function recuperarSenha() {
+  let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  let emailValor = email.value
+
+  if (emailValor == '' || regex.test(email.value) == false) {
+      email.style.border = '1px solid red'
+      email.classList.add('is-invalid')
+      erroEmail.style.visibility = 'visible'
+  } else {
+    modal.style.display = 'block'
+    setTimeout( () => window.location.href = ('./login.html'), 3000)
+  }
+    
+}

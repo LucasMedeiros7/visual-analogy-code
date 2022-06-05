@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="../assets-login-contato/css/header-footer.css">
     <link rel="stylesheet" href="login.css">
 
-    <title>Login - VisualAnalogyCode</title>
-    <link rel="shortcut icon" href="../assets-login-contato/img/favicon-login.svg" type="image/x-icon">
+    <title>Recuperar senha - VisualAnalogyCode</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <script src="funcoes.js"></script>
     <script src="login.js" defer></script>
 </head>
@@ -54,7 +54,7 @@
                             <a href="../pagina-contatos/contato.html" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#main-login" id="navlogin" class="nav-link">Login</a>
+                            <a href="./login.html" id="navlogin" class="nav-link">Login</a>
                         </li>
                         <li class="nav-item">
                             <a href="./html/cadastro.html" id="navcadastro" class="nav-link">Cadastre-se</a>
@@ -65,21 +65,16 @@
         </nav>
     </header>
 
-    <!-- MAIN + FORM -->
-    <main class="main-login" id="main-login">
-        <h1>Faça o seu login</h1>
+    <!-- MAIN + Recuperação -->
+    <main class="main-login" id="recuperar-senha">
+        <h1>Recuperar senha</h1>
         <p>Ainda não possui uma conta?</p>
         <a href="#">Registre-se.</a>
     </main>
     <form id="form-login">
-        <label for="email">E-mail</label>
-        <input class="input-login form-control" type="email" name="" id="email" required>
+        <input placeholder="Digite seu e-mail" class="input-login form-control" type="email" name="" id="email" required>
         <span id="erro-email">Insira um e-mail válido.</span>
-        <label for="senha">Senha</label>
-        <input class="input-login form-control" type="password" name="" id="senha" required>
-        <span id="erro-senha">Sua senha deve ter no mínimo 6 dígitos.</span>
-        <a href="./recuperar.html">Esqueci a minha senha</a>
-        <button id="btn-login" type="submit">Login</button>
+        <button class="btn-recuperar" id="btn-login" type="submit">Recuperar</button>
     </form>
 
     <!-- FOOTER -->
@@ -128,11 +123,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Login efetuado com sucesso</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" id="btn-home" class="btn btn-success">Ir para o inicio</button>
+                    <p>Uma nova senha foi enviada para o seu E-mail</p>
                 </div>
             </div>
         </div>
