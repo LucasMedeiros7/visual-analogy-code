@@ -194,11 +194,11 @@ span {
   font-size: 12px;
 }
 
-input {
+.form-control {
   height: 40px;
   width: 100%;
-  background-color: #dddddd77;
-  border: 1px solid #a7a7a749;
+  background-color: #ddddddc2;
+  border: 1px solid #a7a7a785;
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 0px 10px;
@@ -206,28 +206,29 @@ input {
   font-weight: 500;
 }
 
-input:focus {
+.form-control:focus {
   outline: none;
   border: 2px solid #1b4e2e2f;
   background-color: #e8f0fe;
+  box-shadow: none;
 }
 
-input::placeholder {
+.form-control::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.form {
-  padding: 0px 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-form {
+.form-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin-bottom: 30px;
   padding: 0px 50px;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
 }
 
 .cadastro-btn {
@@ -236,10 +237,11 @@ form {
   font-weight: 600;
   font-size: 14px;
   max-width: fit-content;
-  place-self: center;
   border: 1px solid #e2be88;
   background-color: #ffbe6286;
   color: #ae7d31;
+  display: block;
+  margin: 0 auto;
 }
 
 .cadastro-btn:hover {
@@ -261,10 +263,9 @@ form {
   color: #006666bb;
 }
 
-.grid-form {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 20px;
+h6 {
+  font-size: 12px;
+  color: transparent;
 }
 
 /* MEDIA QUERY */
@@ -273,7 +274,7 @@ form {
   .grid-form {
     grid-template-columns: 2fr 1fr;
   }
-  form {
+  .form-layout {
     padding: 0px 30px;
   }
 }
@@ -299,7 +300,7 @@ form {
   .cadastro-p {
     font-size: 16px;
   }
-  form {
+  .form-layout {
     grid-template-columns: 1fr;
     gap: 30px;
   }
