@@ -1,0 +1,113 @@
+.main-login {
+  background-image: url("../assets-login-contato/img/bg-main-login.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 40vh;
+
+  text-align: center;
+  padding-top: 61px;
+}
+
+.main-login h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.main-login a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #BCE1AB;
+}
+
+.main-login p {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#form-login {
+  position: relative;
+  top: -60px;
+  max-width: 720px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 26px auto 0 auto;
+}
+
+#form-login label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+#form-login .input-login {
+  height: 54px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+
+/* |||||||| MENSAGEM DE ERRO ||||||||| */
+#form-login span {
+  visibility: hidden;
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#form-login a {
+  text-decoration: underline;
+  color: black;
+  align-self: center;
+  margin-top: -10px;
+}
+
+#form-login button {
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 350px;
+  width: 90%;
+  height: 54px;
+  margin: 20px auto;
+  background-color: #bce1ab;
+  color: #004242;
+  border: 1px solid #0066668e;
+  border-radius: 10px;
+}
+
+#form-login .btn-recuperar {
+  margin-top: -20px;
+}
+
+#form-login button:hover {
+  background-color: #a3c594d7;
+}
+
+#recuperar-senha {
+  margin-bottom: 120px;
+}
+
+/* MODAL */
+.modal-body p {
+  color: #004242;
+}
+
+@media screen and (max-width: 750px) {
+  .main-login {
+    padding-top: 33px;
+  }
+
+  .main-login h1 {
+    font-size: 42px;
+  }
+
+  .main-login p {
+    display: block;
+  }
+}
