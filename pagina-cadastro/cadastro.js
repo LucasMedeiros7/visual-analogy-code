@@ -5,21 +5,21 @@ const rua = document.querySelector("#rua");
 
 function getApi() {
   let cep = document.querySelector("#cep").value;
-  var cepValido = cep.replace(/\D/g, "");
-  if (cepValido != "" && cepValido.length === 8) {
+  cep = cep.replace(/\D/g, "");
+  if (cep != "") {
     const pedido = new XMLHttpRequest();
 
     pedido.open("GET", `https://viacep.com.br/ws/${cep}/json`);
     pedido.send();
     pedido.addEventListener("load", function () {
-      var resposta = JSON.parse(pedido.responseText);
+      const resposta = JSON.parse(pedido.responseText);
 
-      var cepApi = resposta.cep;
+      const cepApi = resposta.cep;
 
       if (cepApi != undefined) {
         validarCep();
       } else {
-        return limparCep(), erroCep();
+        return erroCep();
       }
 
       cep = cepApi;
@@ -29,20 +29,21 @@ function getApi() {
       rua.value = resposta.logradouro;
     });
   } else {
-    return limparCep(), erroCep();
+    return erroCep();
   }
 }
 
+const input = document.querySelectorAll(".enderecoinput");
+
 function erroCep() {
-  const input = document.querySelectorAll(".enderecoinput");
   for (var i = 0; i < input.length; i++) {
+    limparCep();
     input[i].classList.remove("is-valid");
     input[i].classList.add("is-invalid");
   }
 }
 
 function validarCep() {
-  const input = document.querySelectorAll(".enderecoinput");
   for (var i = 0; i < input.length; i++) {
     input[i].classList.remove("is-invalid");
     input[i].classList.add("is-valid");
@@ -55,6 +56,7 @@ function limparCep() {
   bairro.value = "";
   rua.value = "";
 }
+
 
 //------------------ NOME COMPLETO ----------------- //
 
@@ -72,7 +74,6 @@ function validarNome() {
     nomeCompleto.classList.add("is-invalid");
   }
 }
-
 //------------------ E-MAIL ----------------- //
 
 const emailInput = document.querySelector("#email");
@@ -153,7 +154,6 @@ function redirecionar() {
   let redirecionarBtn = document.querySelectorAll(".inputs");
   redirecionarBtn = Array.from(redirecionarBtn);
 
-  // let redirecionarBtn = [cidade, estado, bairro, rua, cep, nomeCompleto, emailInput, senha, confirmarSenha, numero, rg]
   let valido = redirecionarBtn.every((item) =>
     item.classList.contains("is-valid")
   );
