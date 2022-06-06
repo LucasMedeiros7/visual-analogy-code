@@ -10,6 +10,7 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
 }
 
 img {
@@ -65,6 +66,7 @@ img {
 .card-body{
     background-color: #cccccc ;
     margin: 20px 0px 20px 0px;
+    height: 200px;
     
     
 }
@@ -90,9 +92,27 @@ h1{
 }
 
 /*  -------------BOTÕES------------- */
-section .card .card-body .btn btn-primary{
-    background-color: #006666;
-  border-radius: 5px;
+.btn{
+    background-color: rgba(188, 225, 171, 1);
+    border-color: rgba(0, 66, 66, 1);
+    color: rgba(0, 66, 66, 1);
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+
+.btnComprar{
+  background-color: rgba(254, 218, 163, 0.69);
+  border-color: rgba(155, 108, 29, 1);
+  color: rgba(155, 108, 29, 1);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+n:active {
+  color: var(--bs-btn-active-color);
+  background-color: rgba(188, 225, 171, 1);
+  border-color: rgba(0, 66, 66, 1) ;
 }
 
 
