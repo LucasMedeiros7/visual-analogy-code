@@ -1,0 +1,143 @@
+/*  -------------SECTIONS------------- */
+
+.card {
+
+  border: none;
+}
+
+.card-body {
+  background-color: #cccccc;
+  margin: 20px 0px 20px 0px;
+  height: 200px;
+}
+
+.caixa-gif {
+  width: 50vw;
+  display: flex;
+  padding: 50px 0px 50px 50px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.caixa-texto {
+  font-size: 20px;
+  margin-right: 10%;
+}
+
+
+
+.caixa-texto .texto {
+  width: 40vw;
+  font-size: 20px;
+}
+
+
+
+
+/*  -------------BOTÕES------------- */
+.btnAcessar {
+  background-color: rgba(188, 225, 171, 1);
+  border-color: rgba(0, 66, 66, 1);
+  color: rgba(0, 66, 66, 1);
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 7px;
+  transition: 0.3s;
+}
+
+.btnAcessar:hover {
+  transform: scale(1.01);
+  box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btnComprar {
+  background-color: rgba(254, 218, 163, 0.69);
+  border-color: rgba(155, 108, 29, 1);
+  color: rgba(155, 108, 29, 1);
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 7px;
+  transition: 0.3s;
+}
+
+.btnComprar:hover {
+  transform: scale(1.01);
+  box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btnSolicitar {
+  background-color: rgba(223, 153, 47, 1);
+  color: rgba(47, 47, 47, 1);
+  border-radius: 20px;
+  margin: 10px 0px 30px 0px;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: bold;
+
+  height: 50px;
+  max-width: 550px;
+  width: 90%;
+  border: 1px solid rgba(155, 108, 29, 1);
+  transition: 0.3s;
+}
+
+.btnSolicitar:hover {
+  background-color: rgba(223, 153, 47, 0.8);
+  transform: scale(1.02);
+  box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btnAcessar,
+.btnComprar {
+  width: 200px;
+  border-width: 1px;
+}
+
+n:active {
+  color: var(--bs-btn-active-color);
+  background-color: rgba(188, 225, 171, 1);
+  border-color: rgba(0, 66, 66, 1);
+}
+
+
+/*  -------------MEDIA QUERIES SOBRE------------- */
+
+
+@media(max-width: 550px) {
+  .caixa-gif {
+    flex-direction: column;
+  }
+
+  .caixa-texto .texto {
+    width: 70vw;
+  }
+
+  .caixa-gif {
+    width: 90vw;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+
+  #collapseExample {
+    width: 80%;
+  }
+
+  .card-body {
+    height: 270px;
+  }
+
+  .btnAcessar,
+  .btnComprar {
+    width: 300px;
+  }
+}

@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <!-- COLOCAR O LINK DO SEU CSS -->
-    <link rel="stylesheet" href="../assets-login-contato/css/header-footer.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 
-    <title>Recuperar senha - VisualAnalogyCode</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <script src="funcoes.js"></script>
-    <script src="login.js" defer></script>
+    <title>Login - Visual Analogy Code</title>
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <script src="../js/funcoes.js"></script>
+    <script src="../js/login.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-md bg-cor2 navbar-dark py-4">
             <div class="container">
                 <div>
-                    <a href="../index.html"><img class="logo" src="../assets-login-contato/img/logo.svg" alt=""></a>
+                    <a href="../index.html"><img class="logo" src="../img/logo.svg" alt=""></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
@@ -48,16 +48,16 @@
                             <a href="../index.html" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./html/produtos.html" class="nav-link">Sobre</a>
+                            <a href="./sobre.html" class="nav-link">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../pagina-contatos/contato.html" class="nav-link">Contato</a>
+                            <a href="./contato.html" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./login.html" id="navlogin" class="nav-link">Login</a>
+                            <a href="#main-login" id="navlogin" class="nav-link">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./html/cadastro.html" id="navcadastro" class="nav-link">Cadastre-se</a>
+                            <a href="./cadastro.html" id="navcadastro" class="nav-link">Cadastre-se</a>
                         </li>
                     </ul>
                 </div>
@@ -65,16 +65,21 @@
         </nav>
     </header>
 
-    <!-- MAIN + Recuperação -->
-    <main class="main-login" id="recuperar-senha">
-        <h1>Recuperar senha</h1>
+    <!-- MAIN + FORM -->
+    <main class="main-login" id="main-login">
+        <h1>Faça o seu login</h1>
         <p>Ainda não possui uma conta?</p>
         <a href="#">Registre-se.</a>
     </main>
     <form id="form-login">
-        <input placeholder="Digite seu e-mail" class="input-login form-control" type="email" name="" id="email" required>
+        <label for="email">E-mail</label>
+        <input class="input-login form-control" type="email" name="" id="email" required>
         <span id="erro-email">Insira um e-mail válido.</span>
-        <button class="btn-recuperar" id="btn-login" type="submit">Recuperar</button>
+        <label for="senha">Senha</label>
+        <input class="input-login form-control" type="password" name="" id="senha" required>
+        <span id="erro-senha">Sua senha deve ter no mínimo 6 dígitos.</span>
+        <a href="./recuperar.html">Esqueci a minha senha</a>
+        <button id="btn-login" type="submit">Login</button>
     </form>
 
     <!-- FOOTER -->
@@ -103,9 +108,9 @@
                 </ul>
 
                 <ul class="footer-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./html/produtos.html">Produtos</a></li>
-                    <li><a href="./html/contato.html">Contato</a></li>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./sobre.html">Produtos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -123,7 +128,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Uma nova senha foi enviada para o seu E-mail</p>
+                    <p>Login efetuado com sucesso</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" id="btn-home" class="btn btn-success">Ir para o inicio</button>
                 </div>
             </div>
         </div>
