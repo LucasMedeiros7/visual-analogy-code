@@ -75,10 +75,9 @@ Colocar em prática os conhecimentos do módulo II do curso de Desenvolvimento F
     </td>
     <td align="center"><a href="https://github.com/ellenmariadev"><img src="img/perfil-ellen.png" width="150px;" alt="foto Ellen"/><br/><sub><b>Ellen Maria </b></sub></a><br />
     </td>
-      <td align="center"><a href="https://github.com/LucasMedeiros7"><img src="img/perfil-lucas.jpeg" width="150px;"  alt="foto Lucas"/><br/><sub><b>  Lucas Medeiros </b></sub></a><br />
+      <td align="center"><a href="https://github.com/LucasMedeiros7"><img src="img/perfil-lucas.png" width="150px;"  alt="foto Lucas"/><br/><sub><b>  Lucas Medeiros </b></sub></a><br />
     </td>
       <td align="center"><a href="https://github.com/MatheusAMR99"><img src="img/perfil-matheus.png" width="150px;" alt="foto Matheus"/><br/><sub><b>Matheus Augusto</b></sub></a><br />
     </td>
-  
   </tr>
 
