@@ -81,6 +81,16 @@
   transition: 0.3s;
 }
 
+.box p {
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  color: #006666;
+  margin-bottom: 10px 0px;
+}
+
 .box:hover {
   transform: scale(1.05);
   background-color: #f7f7f7;
@@ -92,8 +102,13 @@
   margin-bottom: 10px;
 }
 
+.box h4 {
+  margin: 10px 0;
+}
+
 .button_ {
-  padding: 5px 20px;
+  width: 150px;
+  padding: 5px 0;
   font-size: 20px;
   font-weight: 600;
   font-family: "Montserrat";
@@ -104,7 +119,8 @@
 }
 
 .button_:hover {
-  background-color:rgba(254, 218, 163, 0.69);
+  background-color: #BCE1AB;
+  color: #006666;
 }
 
 @media (max-width: 828px) {
