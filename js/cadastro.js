@@ -161,7 +161,6 @@ function redirecionar() {
   const aviso = document.querySelector('h6');
 
   if (valido) {
-    console.log("Redirecionar para Login");
     aviso.style.color = 'green'
     aviso.textContent = 'Cadastro efetuado!';
   } else {
