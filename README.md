@@ -30,9 +30,7 @@ A proposta do site é oferecer um pacote gratuito para analogias básicas como p
 
 ## 👷‍♀️ Status do projeto
 
-<h3 align='center'> 
-	 🚀Finalizado
-</h3><br>
+<h3> 🚀Finalizado </h3> <br>
 
 ## 🎯 Objetivo
 
@@ -48,8 +46,6 @@ Colocar em prática os conhecimentos do módulo II do curso de Desenvolvimento F
 - [x] Solicitacões de novos pacotes personalizados.
 
 ## 🛠️ Tecnologias utilizadas
-
-### **Website**
 
 <div style ="display:inline_block"><br/>
     <img align = 'center' alt='html5' src = 'https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white'>
@@ -67,7 +63,11 @@ Colocar em prática os conhecimentos do módulo II do curso de Desenvolvimento F
 - [Trello](https://trello.com)
 - [Figma](https://www.figma.com)
 
-## 🤓 Trabalho em equipe
+## ✨ Nosso site.
+
+**Acesse aqui**: <span>https://lucasmedeiros7.github.io/VisualAnalogyCode/</span>
+
+## 🤓 Trabalho em equipe.
 
 <table align='center'>
   <tr>
